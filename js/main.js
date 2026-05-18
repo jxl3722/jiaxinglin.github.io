@@ -1,0 +1,1 @@
+function setActive(){const path=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.links a').forEach(a=>{const href=a.getAttribute('href');if((path==='index.html'&&href==='index.html')||href===path)a.classList.add('active')})}setActive();
